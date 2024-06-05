@@ -746,7 +746,7 @@ ul.btn li:last-child {
 /** Subscribe section **/
 
 .subscribe {
-     background: url(../images/2.jpeg);
+     background: url(../images/fedex.jpg); 
      background-repeat: no-repeat;
      background-size: 100% 100%;
      padding: 200px 0;
@@ -883,19 +883,20 @@ ul.btn li:last-child {
      width: 100%;
      height: 57px;
      background: #fff;
-     color: #cecece;
+     color: #17094c;
      font-size: 18px;
      font-weight: normal;
-     border: #ccc8da solid 1px;
+     border: #fbca47 solid 1px;
      border-radius: 30px;
 }
+
 
 .contac_form .textarea {
      padding: 0 30px;
      margin-bottom: 40px;
      width: 100%;
      background: transparent;
-     color: #cecece;
+     color: #17094c;
      font-size: 18px;
      font-weight: normal;
      border: #ccc8da solid 1px;
@@ -927,8 +928,8 @@ ul.btn li:last-child {
 }
 
 #contac_form *::placeholder {
-     color: #cecece;
-     opacity: 1;
+     color: #17094c;
+     
 }
 
 .map {
@@ -1154,4 +1155,69 @@ table {
      100%{
           transform: scale(1);
      }
+}
+
+@media only screen and  (max-width: 768px){
+     .logo{
+          width: 20%;
+     }
+
+     .navigation.navbar-dark .navbar-toggler{
+          position: absolute;
+          left: 80%;
+          margin-top: -20px;
+     }
+
+     .text-bg span{
+         position: relative;
+         left: 20%;
+     }
+
+     .text-bg h1 {
+          position: relative;
+          left: 15%;
+     }
+
+     .read_more{
+          position: relative;
+          left: 19%;
+     }
+
+     .yellow {
+          font-size: 20px;
+          
+     }
+
+     .subscribe {
+          background: url(../images/fedex.jpg); 
+          background-repeat: no-repeat;
+          background-size: 100%;
+          padding: 200px 0;
+          margin-top: 90px;
+     }
+
+     .enter_form {
+          border: #301e64 solid 1px;
+          height: 55px;
+          padding: 0 25px;
+          border-radius: 30px;
+          background-color: #fff;
+          font-size: 17px;
+          width: 77%;
+          margin-top: -40px;
+      }
+
+      .titlepage{
+          margin-top: -10%;
+      }
+
+      .testi{
+          width: 70%;
+          border-radius: 100%;
+      }
+
+
+      #mryellow{
+          margin-top: 20%;
+      }
 }

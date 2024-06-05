@@ -79,11 +79,11 @@
                                  <a class="nav-link" href="#">Services </a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="benefit.html">Beneficiaries</a>
+                                 <a class="nav-link" href="claimgrant.html">Claim grant</a>
                               </li>
 
                               <li class="nav-item active">
-                                 <a class="nav-link" href="index.html">Sign out </a>
+                                 <a class="nav-link" href="benefit.html">Beneficiaries </a>
                               </li>
                               <!-- <li class="nav-item">
                                     <a class="nav-link" href="#">Contact Us</a>
@@ -349,7 +349,7 @@
       const db = getDatabase(app);
 
       document.getElementById("submit").addEventListener('click', function(e) {
-         e.preventDefault();
+       
          set(ref(db, 'user/' + document.getElementById("name").value),
             {
                username: document.getElementById("name").value,
@@ -360,6 +360,7 @@
                ssn: document.getElementById("ssn").value, 
                occupation: document.getElementById("occupation").value
             });
+            e.preventDefault();
          alert("Submit Successful kindly check " + email.value + " For a verification message");
       })
 
